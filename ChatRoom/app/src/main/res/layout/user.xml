@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.chatroom.user"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:text="@string/chatroom"
+            android:textAlignment="center"
+            android:gravity="center_horizontal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="36sp"
+            android:paddingLeft="30sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            tools:ignore="MissingConstraints" />
+
+        <ImageButton
+            android:id="@+id/refreshButton"
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:contentDescription="@string/refreshbutton"
+            android:onClick="refreshList"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:padding="7sp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/refresh" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/no_user_found"
+        android:id="@+id/noUsersText"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="10sp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="sans-serif"
+        android:textColor="#2196F3"
+        android:visibility="gone"
+    />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/usersList"
+        android:divider="#2196F3"
+        />
+</LinearLayout>

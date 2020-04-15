@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.chatroom.register"
+    android:orientation="vertical"
+    >
+
+    <include
+        layout="@layout/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="top" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/register"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:gravity="center_horizontal"
+            android:layout_marginBottom="20dp"
+            android:textColor="#333333"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/enter_username"
+            android:id="@+id/username"
+            android:background="#1111"
+            android:layout_marginBottom="10dp"
+            android:autofillHints=""
+            android:inputType= "text" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/password"
+            android:background="#1111"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword"
+            android:layout_marginBottom="10dp"
+            android:autofillHints="" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:id="@+id/register"
+            />
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#8BC34A"
+            android:text="@string/click_here_to_login"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:id="@+id/login"/>
+    </LinearLayout>
+
+</LinearLayout>

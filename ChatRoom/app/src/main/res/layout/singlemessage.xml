@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/messageframe"
+    >
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bubblein"
+    android:id="@+id/messagebound"
+    android:layout_margin="10sp"
+    android:padding="5dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:textColor="#673AB7"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:id="@+id/username"
+        android:text="@string/harshit"
+        android:paddingLeft="10sp"
+        android:paddingRight="10sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxWidth="300dp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:id="@+id/message_text"
+        android:paddingLeft="14sp"
+        android:paddingRight="10sp"
+        android:text="@string/qwqw"
+        />
+</LinearLayout>
+</RelativeLayout>
